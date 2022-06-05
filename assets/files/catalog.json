@@ -1,0 +1,85 @@
+{
+    "products": [
+        {
+        "id": 1,
+        "name": "Onepiece",
+        "disc": "The pirate story of being king of pirates.",
+        "price": 500,
+        "color": "#33505a",
+        "image":"https://i.pinimg.com/originals/04/65/2b/04652b44ea7c1275d1022d98d59ecc97.jpg"
+        },
+        {
+        "id":2,
+        "name": "Death Note",
+        "disc": "The book of the of the god of death.",
+        "price": 300,
+        "color":"#00ac51",
+        "image":"https://media.comicbook.com/2017/01/deathnotevert-223858.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Kimetsu no yaiba",
+            "disc": "The demon slayer who slays demons ruthlessly",
+            "price": 200,
+            "color": "e3e4e9",
+            "image": "https://1.bp.blogspot.com/-TzMS_H5hfD8/YVG5SyrYrgI/AAAAAAAAXOQ/8TvRVIH-iVQX8BOBiWXS35aaSS9LrD_CACLcBGAsYHQ/s2048/Demon%2BSlayer_%2BKimetsu%2Bno%2BYaiba%2BEntertainment%2BDistrict%2BArc%2BKV.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Haikyuu",
+            "disc": "The story of young boy who plays volley ball and dreams to go to nationals, in Japan.",
+            "price":300,
+            "color":"#00ac51",
+            "image":"https://i.pinimg.com/736x/62/51/d0/6251d02def34ea13ba96a0485ebe6dc1.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Boku No Hero Academia",
+            "disc": "The story of the common boy who dreams to become pro Hero!.",
+            "price":300,
+            "color":"#33505a",
+            "image":"https://images-na.ssl-images-amazon.com/images/I/81ctOuD4lIL.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Black Clover",
+            "disc": "The Story where two young commoners dream to be magic knights and also be magic king",
+            "price":300,
+            "color":"e3e4e9",
+            "image":"https://img1.ak.crunchyroll.com/i/spire3/501db6b69ced79e79a556b20cbdb9c5d1609784936_full.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Kuroko no Basketball",
+            "disc": "The story of the boy who is know 6th phantom member of generation of miracles and his way of playing basketball",
+            "price":300,
+            "color":"#33505a",
+            "image":"https://cdn.anime-planet.com/anime/primary/kurokos-basketball-3-1.jpg?t=1625777834"
+        },
+        {
+            "id": 8,
+            "name":"Naruto",
+            "disc":"The story of a boy who dreams of being hokage of village.",
+            "price": 500,
+            "color":"#00ac51",
+            "image":"https://qph.cf2.quoracdn.net/main-qimg-a35708c147356724a559bceddb0a6006-lq"
+        },
+        {
+            "id":9,
+            "name":"Boruto:Naruto the next generation",
+            "disc":"The story of naruto's child and his generation",
+            "price":500,
+            "color":"#00ac51",
+            "image":"https://i0.wp.com/doublesama.com/wp-content/uploads/2018/04/Boruto-cover.png?resize=640%2C960"
+        },
+        {
+            "id":10,
+            "name":"Shengeki no kyojin",
+            "disc":"The story of people fighting against titans.",
+            "price":500,
+            "color":"#33505a",
+            "image":"https://i.pinimg.com/originals/42/ba/a0/42baa04ae98ef2659a4fa7408e5f64c1.jpg"
+        }
+    ]
+}
+    
