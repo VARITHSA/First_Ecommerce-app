@@ -19,18 +19,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        themeMode: ThemeMode.light,
-        theme: Mytheme.lightTheme(context),
-        darkTheme: Mytheme.darkTheme(context),
-        initialRoute: MyRoutes.homeRoute,
-        debugShowCheckedModeBanner: false,
-        routes:{
-          "/":((context) => const HomePage()),
-          MyRoutes.homeRoute:(context) => const HomePage(),
-          MyRoutes.loginRoute:((context) => const LoginPage()),
-          MyRoutes.cartRoute:(context) => const CartPage()
-          // MyRoutes.detailsRoute:(context) => const HomeDetail()
-        }, 
-        );
+      themeMode: ThemeMode.dark,
+      theme: Mytheme.lightTheme(context),
+      darkTheme: Mytheme.darkTheme(context),
+      initialRoute: MyRoutes.loginRoute,
+      debugShowCheckedModeBanner: false,
+      routes: {
+        "/": ((context) => const LoginPage()),
+        MyRoutes.homeRoute: (context) => const HomePage(),
+        MyRoutes.loginRoute: ((context) => const LoginPage()),
+        MyRoutes.cartRoute: (context) => const CartPage()
+        // MyRoutes.detailsRoute:(context) => const HomeDetail()
+      },
+    );
   }
 }

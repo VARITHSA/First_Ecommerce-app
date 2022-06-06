@@ -61,7 +61,7 @@ class CatalogItem extends StatelessWidget {
                     },
                     style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
-                          Mytheme.darkBluish,
+                          context.theme.buttonColor,
                         ),
                         shape:
                             MaterialStateProperty.all(const StadiumBorder())),
@@ -71,6 +71,6 @@ class CatalogItem extends StatelessWidget {
           ],
         )),
       ],
-    )).white.roundedLg.square(170).make().py16();
+    )).color(context.cardColor).roundedLg.square(170).make().py16();
   }
 }

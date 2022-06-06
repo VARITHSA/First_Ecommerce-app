@@ -47,13 +47,13 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       bottom: false,
       child: Scaffold(
-        backgroundColor: Mytheme.creamColor,
+        backgroundColor: context.canvasColor,
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.pushNamed(context, MyRoutes.cartRoute);
           },
-          backgroundColor: Mytheme.darkBluish,
-          child: const Icon(CupertinoIcons.cart),
+          backgroundColor: context.theme.buttonColor,
+          child: const Icon(CupertinoIcons.cart,color: Colors.white,),
         ),
         body: Container(
           padding: Vx.mV16,

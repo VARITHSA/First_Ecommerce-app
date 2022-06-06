@@ -16,9 +16,9 @@ class HomeDetails extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
       ),
-      backgroundColor: Mytheme.creamColor,
+      backgroundColor: context.theme.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.theme.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -30,7 +30,7 @@ class HomeDetails extends StatelessWidget {
                     },
                     style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
-                          Mytheme.darkBluish,
+                          context.theme.buttonColor,
                         ),
                         shape:
                             MaterialStateProperty.all(const StadiumBorder())),
@@ -53,12 +53,12 @@ class HomeDetails extends StatelessWidget {
                 arcType: VxArcType.CONVEY,
                 edge: VxEdge.TOP,
                 child: Container(
-                    color: Colors.white,
+                    color: context.theme.cardColor,
                     width: context.screenWidth,
                     child: Column(
                       children: [
                         catalog.name.text.bold.xl4
-                            .color(Mytheme.darkBluish)
+                            .color(context.accentColor)
                             .make(),
                         catalog.disc.text
                             .textStyle(context.captionStyle)

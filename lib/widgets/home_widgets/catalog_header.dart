@@ -12,7 +12,7 @@ class CatalogHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        "Manga Catalog".text.xl4.bold.color(Mytheme.darkBluish).make().px16(),
+        "Manga Catalog".text.xl4.bold.color(context.theme.accentColor).make().px16(),
         "Grossing Mangas".text.xl2.make().px16(),
       ],
     );
