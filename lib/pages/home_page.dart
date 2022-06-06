@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:intro/utils/routes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'package:intro/models/catalog.dart';
@@ -48,10 +48,12 @@ class _HomePageState extends State<HomePage> {
       bottom: false,
       child: Scaffold(
         backgroundColor: Mytheme.creamColor,
-        floatingActionButton: FloatingActionButton(onPressed: () {},
-        
-        backgroundColor: Mytheme.darkBluish,
-        child: const Icon(CupertinoIcons.cart),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.pushNamed(context, MyRoutes.cartRoute);
+          },
+          backgroundColor: Mytheme.darkBluish,
+          child: const Icon(CupertinoIcons.cart),
         ),
         body: Container(
           padding: Vx.mV16,
@@ -59,11 +61,10 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const CatalogHeader(),
-              if(MangaModel.items.isNotEmpty)
-              const CatalogList().py16().expand()
+              if (MangaModel.items.isNotEmpty)
+                const CatalogList().py16().expand()
               else
-               const CircularProgressIndicator().centered().py16().expand(),
-              
+                const CircularProgressIndicator().centered().py16().expand(),
             ],
           ),
         ),
@@ -72,9 +73,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
-
-
-
-

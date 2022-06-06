@@ -25,16 +25,17 @@ class HomeDetails extends StatelessWidget {
           children: [
             "₹${catalog.price}".text.bold.red800.xl4.make(),
             ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, MyRoutes.detailsRoute);
-                },
-                style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(
-                      Mytheme.darkBluish,
-                    ),
-                    shape: MaterialStateProperty.all(const StadiumBorder())),
-                child: "BUY".text.xl.make()
-                ).wh(100, 40)
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRoutes.detailsRoute);
+                    },
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                          Mytheme.darkBluish,
+                        ),
+                        shape:
+                            MaterialStateProperty.all(const StadiumBorder())),
+                    child: "Add to cart".text.xl.make())
+                .wh(120, 40)
           ],
         ).pOnly(right: 8.0).p12(),
       ),
