@@ -1,9 +1,17 @@
+// ignore_for_file: unrelated_type_equality_checks
+
 class MangaModel {
-  static List<Item> items=[];
+  static List<Item> items = [];
+
+  // Get Item by ID
+  Item getById(int id) => items.firstWhere((element) => (element.id == id));
+
+  // Get Item by position
+  Item getByposition(int pos) => items[pos];
 }
 
 class Item {
-  final int id;
+  late final int id;
   final String name;
   final String disc;
   final num price;

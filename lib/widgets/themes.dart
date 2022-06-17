@@ -16,15 +16,12 @@ class Mytheme {
         color: Colors.white,
         elevation: 0.0,
         iconTheme: const IconThemeData(color: Colors.black),
+        titleTextStyle: TextStyle(color: Mytheme.darkBluish),
         textTheme: Theme.of(context).textTheme,
       ));
 
-
-
-
-
   static ThemeData darkTheme(BuildContext context) => ThemeData(
-    brightness: Brightness.dark,
+      brightness: Brightness.dark,
       cardColor: Colors.black,
       canvasColor: darkcream,
       buttonColor: lightBluish,
@@ -36,6 +33,7 @@ class Mytheme {
         color: Colors.black,
         elevation: 0.0,
         iconTheme: const IconThemeData(color: Colors.white),
+        titleTextStyle: const TextStyle(color: Colors.white),
         textTheme: Theme.of(context).textTheme,
       ));
 
